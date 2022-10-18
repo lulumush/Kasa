@@ -7,9 +7,14 @@
 }
 
 body {
+  max-width: 1440px;
+  font-size: 18px;
+  margin: auto;
+}
+
+header, main {
   max-width: 1240px;
   margin: auto;
-  font-size: 18px;
 }
 
 .header {
@@ -48,6 +53,21 @@ body {
 }
 .error a {
   margin-top: 150px;
+}
+
+footer {
+  padding: 15px 0;
+  background-color: black;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+footer img {
+  margin-top: 30px;
+}
+footer p {
+  color: #ffffff;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

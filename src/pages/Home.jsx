@@ -1,8 +1,23 @@
 import React from "react"
 
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 function Home() {
   return (
-    <div> Page d'accueil !!!!</div>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <div>
+          page d'accueil !!
+        </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 

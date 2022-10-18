@@ -10,13 +10,12 @@ import Apartments from './pages/Apartments'
 import About from './pages/About'
 
 import Error from './components/Error'
-import Header from './components/Header'
+
 
  
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <Header />
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/apartments/:id" element={<Apartments/>} />
