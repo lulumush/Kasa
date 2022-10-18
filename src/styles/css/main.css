@@ -3,11 +3,13 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   padding: 0;
+  color: #ff6060;
 }
 
 body {
   max-width: 1240px;
   margin: auto;
+  font-size: 18px;
 }
 
 .header {
@@ -21,7 +23,6 @@ body {
 }
 .header__nav a {
   text-decoration: none;
-  color: #ff6060;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 0 100px;
@@ -29,6 +30,24 @@ body {
 .header__nav a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.error {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.error h1 {
+  font-weight: 700;
+  font-size: 288px;
+  margin: 100px 0 0 0;
+}
+.error p {
+  font-size: 36px;
+}
+.error a {
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */
