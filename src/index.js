@@ -8,9 +8,7 @@ import './styles/css/main.css'
 import Home from './pages/Home'
 import Apartments from './pages/Apartments'
 import About from './pages/About'
-
-import Error from './components/Error'
-
+import Error from './pages/Error'
 
  
 ReactDOM.render(
