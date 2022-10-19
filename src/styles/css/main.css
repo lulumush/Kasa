@@ -7,7 +7,7 @@
 }
 
 body {
-  max-width: 1440px;
+  width: 100%;
   font-size: 18px;
   margin: auto;
 }
@@ -64,6 +64,7 @@ header, main {
   align-items: center;
 }
 .home__banner img {
+  height: 100%;
   width: 100%;
   border-radius: 25px;
   filter: brightness(0.6);
@@ -75,6 +76,16 @@ header, main {
   font-weight: 500;
   font-size: 48px;
   z-index: 1;
+}
+
+.about__banner {
+  margin-top: 100px;
+}
+.about__banner img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  filter: brightness(0.6);
 }
 
 .home__cards {

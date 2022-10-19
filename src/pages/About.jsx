@@ -1,6 +1,7 @@
 import React from "react"
 
 import Header from '../components/Header'
+import AboutBanner from '../components/AboutBanner'
 import Footer from '../components/Footer'
 
 function About() {
@@ -10,9 +11,7 @@ function About() {
         <Header />
       </header>
       <main>
-        <div>
-          A propos !!
-        </div>
+        <AboutBanner />
       </main>
       <footer>
         <Footer />
