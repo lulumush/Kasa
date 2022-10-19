@@ -1,6 +1,7 @@
 import React from "react"
 
 import Header from '../components/Header'
+import HomeBanner from '../components/HomeBanner'
 import Footer from '../components/Footer'
 
 function Home() {
@@ -10,9 +11,7 @@ function Home() {
         <Header />
       </header>
       <main>
-        <div>
-          page d'accueil !!
-        </div>
+        <HomeBanner />
       </main>
       <footer>
         <Footer />
