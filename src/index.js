@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import './styles/css/normalize.css'
@@ -11,7 +11,8 @@ import About from './pages/About'
 import Error from './pages/Error'
 
  
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
@@ -22,5 +23,4 @@ ReactDOM.render(
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
-document.getElementById('root')
 )

@@ -2,6 +2,7 @@ import React from "react"
 
 import Header from '../components/Header'
 import HomeBanner from '../components/HomeBanner'
+import Cards from '../components/Cards'
 import Footer from '../components/Footer'
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       </header>
       <main>
         <HomeBanner />
+        <Cards />
       </main>
       <footer>
         <Footer />
