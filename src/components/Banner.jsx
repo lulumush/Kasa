@@ -6,7 +6,8 @@ import AboutBanner from "../assets/about_img.png"
 
 function Banner() {
   const url = useLocation()
-  //console.log(url)
+  //const url = window.location
+  //console.log(window.location.pathname)
   return (
     <section className="banner">
       {url.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : null}

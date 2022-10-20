@@ -129,9 +129,10 @@ header, main {
   background-color: #ff6060;
   border-radius: 10px;
   padding: 0 20px 0 20px;
+  cursor: pointer;
 }
 .about__content--title img {
-  height: 20px;
+  height: 15px;
 }
 .about__content--title p {
   font-size: 24px;
