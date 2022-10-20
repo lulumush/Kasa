@@ -56,36 +56,26 @@ header, main {
   margin-top: 150px;
 }
 
-.home__banner {
+.banner {
   margin-top: 100px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-.home__banner img {
+.banner img {
   height: 100%;
   width: 100%;
   border-radius: 25px;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
-.home__banner h1 {
+.banner h1 {
   display: flex;
   position: absolute;
   color: #ffffff;
   font-weight: 500;
   font-size: 48px;
   z-index: 1;
-}
-
-.about__banner {
-  margin-top: 100px;
-}
-.about__banner img {
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
-  filter: brightness(0.6);
 }
 
 .home__cards {
