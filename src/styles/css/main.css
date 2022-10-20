@@ -20,7 +20,7 @@ header, main {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 70px 0;
 }
 .header__nav {
   display: flex;
@@ -83,7 +83,7 @@ header, main {
 .home__cards {
   background-color: #f7f7f7;
   border-radius: 25px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 0 0;
   padding: 20px 0 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +115,39 @@ header, main {
   top: 80%;
 }
 
+.carrousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.carrousel__images {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.carrousel .arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 38%;
+}
+.carrousel__right {
+  right: 3%;
+}
+.carrousel__left {
+  left: 3%;
+}
+.carrousel p {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  bottom: 20px;
+}
+
 .about {
-  margin: 50px auto 50px auto;
+  margin: 50px auto 0 auto;
   max-width: 1020px;
 }
 .about__content {
@@ -150,6 +181,7 @@ header, main {
 }
 
 footer {
+  margin-top: 70px;
   padding: 15px 0;
   background-color: black;
   text-align: center;

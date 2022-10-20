@@ -8,16 +8,12 @@ import Footer from '../components/Footer'
 function Home() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Banner />
         <Cards />
       </main>
-      <footer>
         <Footer />
-      </footer>
     </>
   )
 }

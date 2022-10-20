@@ -6,7 +6,7 @@ import './styles/css/normalize.css'
 import './styles/css/main.css'
 
 import Home from './pages/Home'
-import Apartments from './pages/Apartments'
+import Apartments from './pages/Apartment'
 import About from './pages/About'
 import Error from './pages/Error'
 

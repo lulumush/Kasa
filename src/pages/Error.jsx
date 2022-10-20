@@ -7,9 +7,7 @@ import Error from '../components/Error'
 function ErrorPage() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Error />
       </main>

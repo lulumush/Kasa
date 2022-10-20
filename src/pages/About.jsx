@@ -8,16 +8,12 @@ import Footer from '../components/Footer'
 function About() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Banner />
         <AboutContent />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   )
 }
