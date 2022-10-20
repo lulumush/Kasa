@@ -34,6 +34,8 @@ header, main {
 }
 .header__nav a:hover {
   cursor: pointer;
+}
+.header__nav a.active {
   text-decoration: underline;
 }
 
@@ -111,6 +113,39 @@ header, main {
   left: 5.88%;
   right: 5.88%;
   top: 80%;
+}
+
+.about {
+  margin: 50px auto 50px auto;
+  max-width: 1020px;
+}
+.about__content {
+  margin-top: 30px;
+}
+.about__content--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+}
+.about__content--title img {
+  height: 20px;
+}
+.about__content--title p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.about__content--description {
+  position: relative;
+  top: -10px;
+  z-index: -1;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 30px 20px;
+  background-color: #f7f7f7;
 }
 
 footer {

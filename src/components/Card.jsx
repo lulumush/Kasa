@@ -1,12 +1,12 @@
 import React from "react"
 import {Link} from "react-router-dom"
 
-function Card({id, title, cover}) {
+function Card(props) {
   return (
-    <article key={id} className="home__cards--card">
-        <Link to={`/apartments/${id}`}>
-            <img src={cover} alt={title}/>
-            <p>{title}</p>
+    <article key={props.id} className="home__cards--card">
+        <Link to={`/apartments/${props.id}`}>
+            <img src={props.cover} alt={props.title}/>
+            <p>{props.title}</p>
         </Link>
     </article>
   )

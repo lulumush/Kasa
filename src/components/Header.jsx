@@ -1,16 +1,16 @@
 import React from "react"
 import Logo from "../assets/logo.png"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Header() {
     return (
       <header>
         <div className="header"> 
           <img src={Logo} alt="Logo Kasa"/>
-          <div className="header__nav">
-              <Link to="/">Accueil</Link>
-              <Link to="/about">A Propos</Link>
-          </div>
+          <nav className="header__nav">
+              <NavLink to="/" end>Accueil</NavLink>
+              <NavLink to="/about">A Propos</NavLink>
+          </nav>
         </div>
       </header>
     )
