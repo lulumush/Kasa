@@ -180,6 +180,42 @@ header, main {
   background-color: #f7f7f7;
 }
 
+.apartment__content {
+  margin-top: 30px;
+  width: 100%;
+}
+.apartment__content--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+.apartment__content--title img {
+  height: 15px;
+}
+.apartment__content--title p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.apartment__content--description {
+  position: relative;
+  top: -10px;
+  z-index: -1;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px 20px;
+  background-color: #f7f7f7;
+}
+.apartment__dropdown {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+
 footer {
   margin-top: 70px;
   padding: 15px 0;

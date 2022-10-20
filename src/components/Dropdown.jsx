@@ -7,12 +7,12 @@ import ArrowDown from "../assets/arrow_down.png"
 function Dropdown(props) {
   const [open, setOpen] = useState(false)
   return (
-    <div key={props.title} className="about__content">
-      <div className="about__content--title" onClick={() => setOpen(!open)}>
+    <div key={props.title} className={props.class+"__content"}>
+      <div className={props.class+"__content--title"} onClick={() => setOpen(!open)}>
         <p>{props.title}</p>
         <img src={!open ? ArrowUp : ArrowDown} alt="arrow icon"/>
       </div>
-      {open ? <div className="about__content--description">{props.content}</div> : null}
+      {open ? <div className={props.class+"__content--description"}>{props.content}</div> : null}
     </div>
   )
 }

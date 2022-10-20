@@ -2,8 +2,10 @@ import React from "react"
 
 import Header from '../components/Header'
 import Banner from '../components/Banner'
-import AboutContent from '../components/About'
+import Dropdown from '../components/Dropdown'
 import Footer from '../components/Footer'
+
+import Datas from "../datas/about.json"
 
 function About() {
   return (
@@ -11,7 +13,11 @@ function About() {
       <Header />
       <main>
         <Banner />
-        <AboutContent />
+        <section className="about">
+        {Datas.map((data) =>
+          <Dropdown key={data.title} title={data.title} content={data.content} class="about" />
+        )}         
+    </section>
       </main>
       <Footer />
     </>

@@ -4,9 +4,11 @@ import { useParams, Navigate } from "react-router-dom"
 import Header from '../components/Header'
 import Carrousel from '../components/Carrousel'
 import Tags from '../components/Tags'
+import Dropdown from "../components/Dropdown"
 import Footer from '../components/Footer'
 
 import Datas from "../datas/rentals.json"
+
 
 
 function Apartment() {
@@ -28,6 +30,10 @@ function Apartment() {
               {rental.tags.map((item) =>
                 <Tags key={item} name={item} />
               )}
+            </div>
+            <div className="apartment__dropdown">
+              <Dropdown class="apartment" title="Description" content={rental.description}/>
+              <Dropdown class="apartment" title="Equipements" content={rental.equipments}/>
             </div>
           </section>
         </main>          
