@@ -232,7 +232,13 @@ footer p {
   margin-top: 30px;
 }
 
+.apartment__detail {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
 .apartment__detail h1 {
+  margin: 0;
   font-size: 36px;
   font-weight: 500;
   font-style: normal;
@@ -248,6 +254,14 @@ footer p {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
+}
+.apartment__host {
+  display: flex;
+  gap: 20px;
+}
+.apartment__host img {
+  height: 64px;
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

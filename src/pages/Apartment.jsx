@@ -23,13 +23,21 @@ function Apartment() {
         <Header />
         <main>
           <Carrousel picture={rental.pictures} alt={rental.title}/>
-          <section className="apartment__detail">
-            <h1>{rental.title}</h1>
-            <p>{rental.location}</p>
-            <div className="apartment__tags">
-              {rental.tags.map((item) =>
-                <Tags key={item} name={item} />
-              )}
+          <section className="apartment">
+            <div className="apartment__detail">
+              <div className="apartment__detail--name">
+                <h1>{rental.title}</h1>
+                <p>{rental.location}</p>
+                <div className="apartment__tags">
+                  {rental.tags.map((item) =>
+                    <Tags key={item} name={item} />
+                  )}
+                </div>
+              </div>
+              <div className="apartment__host">
+                <p>{rental.host.name}</p>
+                <img src={rental.host.picture} alt={rental.host.name} />
+              </div>
             </div>
             <div className="apartment__dropdown">
               <Dropdown class="apartment" title="Description" content={rental.description}/>
