@@ -22,7 +22,7 @@ function Carrousel(props) {
             <img src={LeftArrow} alt="Left arrow" className="carrousel__left arrow" onClick={previous}/>
             <img src={props.picture[imgIndex]} alt={props.alt} className="carrousel__images"/>            
             <img src={RightArrow} alt="Right arrow" className="carrousel__right arrow"  onClick={next}/>
-            <p>{imgIndex+1}/{props.picture.length}</p>            
+            <p>{imgIndex +1}/{props.picture.length}</p>            
         </section>
     )  
 }

@@ -1,0 +1,25 @@
+.apartment{
+
+    &__detail{
+
+        & h1{
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+
+    &__tags{
+        display: flex;
+
+        & p{
+            margin-right: 20px;
+            padding:5px 15px;
+            border-radius: 10px;
+            background-color: #ff6060;
+            color:#ffffff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
