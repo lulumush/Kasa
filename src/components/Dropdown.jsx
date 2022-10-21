@@ -10,7 +10,7 @@ function Dropdown(props) {
     <div key={props.title} className={props.class+"__content"}>
       <div className={props.class+"__content--title"} onClick={() => setOpen(!open)}>
         <p>{props.title}</p>
-        <img src={!open ? ArrowUp : ArrowDown} alt="arrow icon"/>
+        <img src={!open ? ArrowDown : ArrowUp} alt="arrow icon"/>
       </div>
       {open ? <div className={props.class+"__content--description"}>{props.content}</div> : null}
     </div>

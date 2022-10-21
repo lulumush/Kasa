@@ -171,6 +171,7 @@ header, main {
   color: #ffffff;
 }
 .about__content--description {
+  line-height: 150%;
   position: relative;
   top: -10px;
   z-index: -1;
@@ -202,6 +203,7 @@ header, main {
   color: #ffffff;
 }
 .apartment__content--description {
+  line-height: 150%;
   position: relative;
   top: -10px;
   z-index: -1;
@@ -209,6 +211,9 @@ header, main {
   font-weight: 400;
   padding: 30px 20px;
   background-color: #f7f7f7;
+}
+.apartment__content--description ul {
+  list-style: none;
 }
 .apartment__dropdown {
   display: flex;

@@ -26,6 +26,7 @@
         }
 
         &--description{
+            line-height: 150%;
             position: relative;
             top:-10px;
             z-index: -1;
@@ -65,13 +66,18 @@
         }
 
         &--description{
+            line-height: 150%;
             position: relative;
             top:-10px;
             z-index: -1;
             font-size: 18px;
             font-weight: 400;
             padding: 30px 20px;
-            background-color: #f7f7f7;;
+            background-color: #f7f7f7;
+
+            & ul{
+                list-style: none;
+            }
         }
     }
     &__dropdown{

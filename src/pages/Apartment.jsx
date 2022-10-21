@@ -14,6 +14,9 @@ import Datas from "../datas/rentals.json"
 function Apartment() {
   const params = useParams();
   const rental = Datas.find((item => item.id === params.id));
+  const equipment = rental.equipments.map((item) =>
+    <li key={item}>{item}</li>
+  );
   if (!rental){
     return <Navigate to="*" />
   }
@@ -41,7 +44,7 @@ function Apartment() {
             </div>
             <div className="apartment__dropdown">
               <Dropdown class="apartment" title="Description" content={rental.description}/>
-              <Dropdown class="apartment" title="Equipements" content={rental.equipments}/>
+              <Dropdown class="apartment" title="Équipements" content={<ul>{equipment}</ul>}/>
             </div>
           </section>
         </main>          
