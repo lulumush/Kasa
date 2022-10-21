@@ -214,6 +214,7 @@ header, main {
 }
 .apartment__content--description ul {
   list-style: none;
+  margin: 0;
 }
 .apartment__dropdown {
   display: flex;
@@ -262,11 +263,21 @@ footer p {
 }
 .apartment__host {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.apartment__host--name {
+  display: flex;
   gap: 20px;
 }
-.apartment__host img {
+.apartment__host--name img {
   height: 64px;
   border-radius: 100%;
+}
+.apartment__host--rating {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

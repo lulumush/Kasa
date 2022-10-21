@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Carrousel from '../components/Carrousel'
 import Tags from '../components/Tags'
 import Dropdown from "../components/Dropdown"
+import Rating from "../components/Rating"
 import Footer from '../components/Footer'
 
 import Datas from "../datas/rentals.json"
@@ -16,7 +17,7 @@ function Apartment() {
   const rental = Datas.find((item => item.id === params.id));
   const equipment = rental.equipments.map((item) =>
     <li key={item}>{item}</li>
-  );
+  )
   if (!rental){
     return <Navigate to="*" />
   }
@@ -38,8 +39,14 @@ function Apartment() {
                 </div>
               </div>
               <div className="apartment__host">
-                <p>{rental.host.name}</p>
-                <img src={rental.host.picture} alt={rental.host.name} />
+                <div className="apartment__host--name">
+                  <p>{rental.host.name}</p>
+                  <img src={rental.host.picture} alt={rental.host.name} />
+                </div>
+                <div className="apartment__host--rating">
+                    <Rating rate={rental.rating} />
+                </div>
+                                
               </div>
             </div>
             <div className="apartment__dropdown">

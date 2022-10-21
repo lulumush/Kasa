@@ -29,11 +29,25 @@
 
     &__host{
         display: flex;
-        gap :20px;
+        flex-direction: column;
+        gap: 10px;
 
-        & img{
-            height:64px;
-            border-radius: 100%;
+        &--name{
+            display: flex;
+            gap: 20px;
+
+            & img{
+                height:64px;
+                border-radius: 100%;
+            }
         }
+
+        &--rating{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
     }
 }
