@@ -6,7 +6,10 @@ function Card(props) {
     <article key={props.id} className="home__cards--card">
         <Link to={`/apartments/${props.id}`}>
             <img src={props.cover} alt={props.title}/>
-            <p>{props.title}</p>
+            <div className="home__cards--title">
+              <p>{props.title}</p>
+            </div>
+            
         </Link>
     </article>
   )

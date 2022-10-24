@@ -4,7 +4,6 @@
         margin-top:40px;
         display: flex;
         justify-content: space-between;
-
         &--name h1{
             margin: 0;
             font-size: 36px;
@@ -33,6 +32,9 @@
                 display: flex;
                 gap: 20px;
                 align-items: center;
+                & p{
+                    text-align: right;
+                }
     
                 & img{
                     height:64px;
@@ -43,7 +45,11 @@
             &--rating{
                 margin-top: 10px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: right;
+
+                & img {
+                    margin-left:5px;
+                }
             }        
         }
     }
