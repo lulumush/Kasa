@@ -1,37 +1,35 @@
-.home__cards {
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    margin: 50px 0 0 0;
-    padding:20px 0 20px 0;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+.home__cards--card{      
+    position: relative;
+    margin: 30px; 
+    width: 340px;
+    height: 340px;
+    
 
-    &--card{      
-        position: relative;
-        margin: 30px; 
-        width: 340px;
-        height: 340px;
+    & img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        filter: brightness(0.8);
+    }
 
-        & img{
-            width:100%;
-            height:100%;
-            object-fit: cover;
-            border-radius: 10px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-            filter: brightness(0.8);
-        }
+    & p{
+        color: $white-color;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        bottom: 5.88%;
+        left: 5.88%;
+        right: 5.88%;
+        top: 80%;
+    }
+}
 
-        & p{
-            color:#ffffff;
-            font-weight: 500;
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            bottom: 5.88%;
-            left: 5.88%;
-            right: 5.88%;
-            top: 80%;
-        }
+//tablet and phone display
+@include tablet-display($max-width-tablet){
+    .home__cards--card{      
+        margin: 15px 0;
+        width: 100%;
     }
 }

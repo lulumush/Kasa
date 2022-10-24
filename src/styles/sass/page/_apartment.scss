@@ -5,49 +5,173 @@
         display: flex;
         justify-content: space-between;
 
-        & h1{
+        &--name h1{
             margin: 0;
             font-size: 36px;
-            font-weight: 500;
             font-style: normal;
         }
-    }
 
-    &__tags{
-        display: flex;
-
-        & p{
-            margin-right: 20px;
-            padding:5px 15px;
-            border-radius: 10px;
-            background-color: #ff6060;
-            color:#ffffff;
-            font-size: 14px;
-            font-weight: 500;
-        }
-    }
-
-    &__host{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        &--name{
+        &--tag{
             display: flex;
-            gap: 20px;
-
-            & img{
-                height:64px;
-                border-radius: 100%;
+    
+            & p{
+                margin-right: 20px;
+                padding:5px 15px;
+                border-radius: 10px;
+                background-color: $first-color;
+                color:$white-color;
+                font-size: 14px;
             }
         }
 
-        &--rating{
-            margin-top: 10px;
+        &__host{
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+    
+            &--name{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+    
+                & img{
+                    height:64px;
+                    border-radius: 100%;
+                }
+            }
+    
+            &--rating{
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+            }        
         }
-
-        
     }
+
+    &__dropdown{
+        display: flex;
+        justify-content: space-around;  
+        gap: 60px;    
+        
+        &__content{
+            margin-top:30px;
+            width: 100%;
+    
+            &--title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $first-color;
+                border-radius: 10px;
+                padding: 0 20px 0 20px;
+                cursor: pointer;
+    
+                & img{
+                    height:15px;
+                }
+    
+                & p{
+                    font-size: 18px;
+                    color:$white-color;
+                }
+            }
+    
+            &--description{
+                line-height: 150%;
+                position: relative;
+                top:-10px;
+                z-index: -1;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 30px 20px;
+                background-color: $second-color;
+    
+                & ul{
+                    list-style: none;
+                    margin: 0;
+                }
+            }
+        }
+    
+    }   
+    
 }
+//tablet display
+@include tablet-display($max-width-tablet){
+    .apartment {
+        &__detail{
+            flex-direction: column;
+            &--tag{
+                flex-wrap: wrap;
+                    &--name{
+                    font-size: 10px;
+                }
+            }
+
+            &__host{
+                margin-top: 5px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                
+                &--rating{
+                    margin: 0;
+                }
+            }
+        }  
+        &__dropdown{
+            flex-direction: column;
+            gap: 0px; 
+        }     
+    }
+    
+}
+
+//phone display
+@include phone-display($max-width-phone){
+    .apartment {
+        &__detail{
+            &--name{
+                & h1{
+                    font-size: 18px;
+                }
+                & p{
+                    font-size: 14px;
+                }
+            }
+            &--tag p{
+                font-size: 10px;
+            }
+            &__host{
+                &--name{
+                    & img{
+                        height:40px;
+                    }
+                    & p{
+                        font-size: 12px;
+                    }
+                }
+                &--rating{ 
+                    & img{
+                        height:20px;
+                    }
+                }
+            }
+        }
+        &__dropdown{
+            &__content{
+                &--title p{
+                    font-size: 13px;
+                }
+                &--description{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+       

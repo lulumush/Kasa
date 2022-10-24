@@ -8,18 +8,40 @@
         align-items: center;
 
         & a{
-            text-decoration: none;
             font-size: 24px;
-            font-weight: 500;
             margin:0 0 0 100px;
-
-            &:hover{
-                cursor: pointer;
-            }
             
             &.active{
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+//header for tablet
+@include tablet-display($max-width-tablet){
+    .header{
+        margin:30px 0;
+
+        & img{
+            width:130px;
+        }
+
+        &__nav a{
+            text-transform: uppercase;
+            font-size: 16px;
+            margin:0 0 0 50px;
+        }
+    }
+}
+
+//header for phone
+@include phone-display($max-width-phone){
+    .header{
+
+        &__nav a{
+            font-size: 12px;
+            margin:0 0 0 12px;
         }
     }
 }

@@ -1,0 +1,18 @@
+.home__cards {
+    background-color: $second-color;
+    border-radius: 25px;
+    margin: 50px 0 0 0;
+    padding:20px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+//tablet and phone display
+@include tablet-display($max-width-tablet){
+    .home__cards{      
+        background-color: transparent;
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+}

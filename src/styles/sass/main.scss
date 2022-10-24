@@ -1,11 +1,22 @@
+
+@import './utils/mixin';
+
+@import './base/screen-size';
 @import './base/font';
+@import './base/color';
 @import './base/base';
+
+
 @import './component/header';
-@import './component/error';
 @import './component/banner';
+@import './component/error';
+
 @import './component/card';
 @import './component/carrousel';
-@import './component/dropdown';
 @import './component/footer';
+
+@import './page/homepage';
 @import './page/apartment';
+@import './page/about';
+
 

@@ -9,7 +9,7 @@ function Banner() {
   //const url = window.location
   //console.log(window.location.pathname)
   return (
-    <section className="banner">
+    <section className={url.pathname === "/" ? "banner" : url.pathname === "/about" ? "about__banner" : null}>
       {url.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : null}
       <img src={url.pathname === "/" ? HomeBanner : url.pathname === "/about" ? AboutBanner : null} alt="Paysage montagneux"/>          
     </section>

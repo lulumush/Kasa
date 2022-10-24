@@ -32,26 +32,26 @@ function Apartment() {
               <div className="apartment__detail--name">
                 <h1>{rental.title}</h1>
                 <p>{rental.location}</p>
-                <div className="apartment__tags">
+                <div className="apartment__detail--tag">
                   {rental.tags.map((item) =>
                     <Tags key={item} name={item} />
                   )}
                 </div>
               </div>
-              <div className="apartment__host">
-                <div className="apartment__host--name">
+              <div className="apartment__detail__host">
+                <div className="apartment__detail__host--name">
                   <p>{rental.host.name}</p>
                   <img src={rental.host.picture} alt={rental.host.name} />
                 </div>
-                <div className="apartment__host--rating">
+                <div className="apartment__detail__host--rating">
                     <Rating rate={rental.rating} />
                 </div>
                                 
               </div>
             </div>
             <div className="apartment__dropdown">
-              <Dropdown class="apartment" title="Description" content={rental.description}/>
-              <Dropdown class="apartment" title="Équipements" content={<ul>{equipment}</ul>}/>
+              <Dropdown class="apartment__dropdown" title="Description" content={rental.description}/>
+              <Dropdown class="apartment__dropdown" title="Équipements" content={<ul>{equipment}</ul>}/>
             </div>
           </section>
         </main>          

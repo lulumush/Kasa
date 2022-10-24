@@ -26,10 +26,25 @@
     
     & p{
         position: absolute;
-        color: #ffffff;
-        font-weight: 500;
-        font-size: 18px;
+        color: $white-color;
         bottom:20px;
         
+    }
+}
+
+//tablet and phone display
+@include tablet-display($max-width-tablet){
+    .carrousel{      
+        
+        &__images{
+            height:255px;
+        }
+        & .arrow{
+            top:40%;
+            height:30px;
+        }
+        & p{
+            display: none;
+        }
     }
 }

@@ -1,5 +1,4 @@
 .error{
-    font-weight: 500;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -16,6 +15,22 @@
     }
 
     & a{
+        text-decoration: underline;
         margin-top: 150px;
+    }
+}
+
+//banner for phone display
+@include tablet-display($max-width-tablet){
+    .error{ 
+        & h1{
+            font-size: 96px;
+        }
+        & p{
+            font-size: 18px;
+        }
+        & a{
+            font-size: 14px;
+        }
     }
 }

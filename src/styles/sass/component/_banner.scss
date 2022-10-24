@@ -1,4 +1,5 @@
-.banner{
+//banner for desktop display
+.banner, .about__banner{
     margin-top:100px;
     display: flex;
     position: relative;
@@ -6,19 +7,53 @@
     align-items: center;
 
     & img{
-        height: 100%;
+        height: 220px;
         width: 100%;
         border-radius: 25px;
+        object-fit: cover;
         filter:brightness(0.8);//change brightness of the img
     }
     
     & h1{
         display: flex;
         position: absolute;
-        color:#ffffff;
-        font-weight: 500;
+        color:$white-color;
         font-size: 48px;
         z-index: 1;
     }
     
+}
+
+
+
+//banner for tablet display
+@include tablet-display($max-width-tablet){
+    .banner, .about__banner {
+        margin-top: 20px;
+
+        & img{
+            border-radius: 10px;
+        }
+
+        & h1{
+            font-size: 36px;
+            margin: 0 10px 0 10px;
+            
+        }
+    }
+}
+
+//banner for phone display
+@include phone-display($max-width-phone){
+    
+    .banner {
+
+        & img{
+            height:110px;
+        }
+        
+        & h1{
+            font-size: 24px;            
+        }
+    }    
 }

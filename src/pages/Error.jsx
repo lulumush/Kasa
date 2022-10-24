@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from '../components/Header'
-//import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import Error from '../components/Error'
 
 function ErrorPage() {
@@ -11,9 +11,9 @@ function ErrorPage() {
       <main>
         <Error />
       </main>
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </>
   )
 }
