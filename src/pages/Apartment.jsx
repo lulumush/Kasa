@@ -11,17 +11,19 @@ import Footer from '../components/Footer'
 import Datas from "../datas/rentals.json"
 
 
-
 function Apartment() {
-  const params = useParams();
-  const rental = Datas.find((item => item.id === params.id));
-  const equipment = rental.equipments.map((item) =>
-    <li key={item}>{item}</li>
-  )
+  const params = useParams()
+
+  const rental = Datas.find((item => item.id === params.id)) 
+  
+  
   if (!rental){
-    return <Navigate to="*" />
+    return <Navigate to="/error" />
   }
   else{
+    const equipment = rental.equipments.map((item) =>
+    <li key={item}>{item}</li>
+    )
     return (
       <>
         <Header />
@@ -60,6 +62,6 @@ function Apartment() {
     )
   }
   
-  }
+}
   
-  export default Apartment
+export default Apartment
