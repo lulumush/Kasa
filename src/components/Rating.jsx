@@ -18,10 +18,10 @@ function Rating(props) {
     return(
         <>
             {rate.map((item) =>
-                <img src={rateOn} key={item} alt="Etoile colorée"/>
+                <img src={rateOn} key={item} alt="Étoile colorée"/>
             )}
             {rateDiff.map((item) =>
-                <img src={rateOff} key={item} alt="Etoile grisée"/>
+                <img src={rateOff} key={item} alt="Étoile grisée"/>
             )}
         </>
     )

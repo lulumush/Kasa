@@ -19,8 +19,8 @@ function Carrousel(props) {
     return(
         <section className="carrousel">            
             <img src={props.picture[imgIndex]} alt={props.alt} className="carrousel__images"/>   
-            {props.picture.length > 1 ? <> <img src={LeftArrow} alt="Left arrow" className="carrousel__left arrow" onClick={previous}/>            
-                <img src={RightArrow} alt="Right arrow" className="carrousel__right arrow"  onClick={next}/> 
+            {props.picture.length > 1 ? <> <img src={LeftArrow} alt="Flèche gauche" className="carrousel__left arrow" onClick={previous}/>            
+                <img src={RightArrow} alt="Flèche droite" className="carrousel__right arrow"  onClick={next}/> 
                 <p>{imgIndex +1}/{props.picture.length}</p> </> : null}          
         </section>
     )  

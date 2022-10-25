@@ -22,5 +22,5 @@ root.render(
                 <Route path="*" element={<Error/>} />
             </Routes>
         </BrowserRouter>
-    </React.StrictMode>,
+    </React.StrictMode>
 )
