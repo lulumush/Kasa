@@ -4,10 +4,9 @@ import { useLocation } from 'react-router-dom';
 import HomeBanner from "../assets/home_img.png"
 import AboutBanner from "../assets/about_img.png"
 
+//Component that displays the image based on the page (home or about)
 function Banner() {
   const url = useLocation()
-  //const url = window.location
-  //console.log(window.location.pathname)
   return (
     <section className={url.pathname === "/" ? "banner" : url.pathname === "/about" ? "about__banner" : null}>
       {url.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : null}

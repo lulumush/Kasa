@@ -4,6 +4,7 @@ import { useState } from 'react'
 import ArrowUp from "../assets/arrow_up.png"
 import ArrowDown from "../assets/arrow_down.png"
 
+//Component that allows, on user's click, to show or hide a text box
 function Dropdown(props) {
   const [open, setOpen] = useState(false)
   return (

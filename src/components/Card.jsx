@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from "react-router-dom"
 
+//Component that displays some data of a renting (img, name)
 function Card(props) {
   return (
     <article key={props.id} className="home__cards--card">

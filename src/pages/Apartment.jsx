@@ -16,10 +16,11 @@ function Apartment() {
 
   const rental = Datas.find((item => item.id === params.id)) 
   
-  
+  //if rental is not found then redirect to error page
   if (!rental){
     return <Navigate to="/error" />
   }
+  //if rental is found then displays all the infos
   else{
     const equipment = rental.equipments.map((item) =>
     <li key={item}>{item}</li>

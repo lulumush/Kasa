@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import LeftArrow from "../assets/arrow_left.png"
 import RightArrow from "../assets/arrow_right.png"
 
+//Component that displays images of a rental and allows you to navigate through them
 function Carrousel(props) {
     const [imgIndex, setImgIndex] = useState(0)
     //console.log(props.picture.length)

@@ -3,8 +3,9 @@ import React from "react"
 import rateOn from "../assets/rate_on.png";
 import rateOff from "../assets/rate_off.png";
 
-function Rating(props) {
 
+//Component that displays an host rating in star form
+function Rating(props) {
     const rate=[]
     for (let i = 0; i < props.rate; i++){
         rate.push(i)
@@ -25,6 +26,6 @@ function Rating(props) {
             )}
         </>
     )
-  }
+}
   
-  export default Rating
+export default Rating

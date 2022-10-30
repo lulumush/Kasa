@@ -8,7 +8,7 @@ import About from '../pages/About'
 import Error from '../pages/Error'
 
 
-
+//All the possible routes
 function Routing() {
     return (
       <BrowserRouter>
