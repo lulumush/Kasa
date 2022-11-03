@@ -17,7 +17,7 @@ function About() {
         {Datas.map((data) =>
           <Dropdown key={data.title} title={data.title} content={data.content} class="about" />
         )}         
-    </section>
+        </section>
       </main>
       <Footer />
     </>
