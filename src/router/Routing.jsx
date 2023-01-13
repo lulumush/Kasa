@@ -11,7 +11,7 @@ import Error from '../pages/Error'
 //All the possible routes
 function Routing() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/apartments/:id" element={<Apartments/>} />
