@@ -21,19 +21,18 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
 }
 
 header, main{
     max-width: 1240px;
-    margin: auto;
     padding:0 20px;
+    width: 100%;
 }
-
 
 // for tablet and phone
 @include tablet-display($max-width-tablet){
     header, main{
-        padding:0;
         margin : auto 30px;
     }
 }
